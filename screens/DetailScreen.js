@@ -22,7 +22,7 @@ const DetailScreen = ({ navigation, route }) => {
     <View style={{ flex: 1, backgroundColor: '#0f0f0f' }}>
       <SharedElement id={`item.${item.id}.image_url`}>
         <Image
-          source={{ uri: item.image_url }}
+          source={item.image_url }
           style={{
             width: '100%',
             height: ITEM_HEIGHT,
@@ -139,21 +139,6 @@ DetailScreen.sharedElements = route => {
   return [
     {
       id: `item.${item.id}.image_url`,
-      animation: 'move',
-      resize: 'clip'
-    },
-    {
-      id: `item.${item.id}.title`,
-      animation: 'fade',
-      resize: 'clip'
-    },
-    {
-      id: `item.${item.id}.description`,
-      animation: 'fade',
-      resize: 'clip'
-    },
-    {
-      id: `item.${item.id}.iconName`,
       animation: 'move',
       resize: 'clip'
     }
