@@ -42,7 +42,7 @@ const DetailScreen = ({ navigation, route }) => {
         <MaterialCommunityIcons
           name='close'
           size={28}
-          color='#fff'
+          color='#212121'
           style={{
             position: 'absolute',
             top: 40,
