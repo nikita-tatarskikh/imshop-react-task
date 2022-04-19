@@ -1,7 +1,9 @@
 # react-native-task
 
-npx create-react-native-app -t https://github.com/nikita-tatarskikh/react-task 
+steps to get started:
 
-cd your-app-name
++ npx create-react-native-app -t https://github.com/nikita-tatarskikh/react-task 
 
-yarn ios 
++ cd your-app-name
+
++ yarn ios 
