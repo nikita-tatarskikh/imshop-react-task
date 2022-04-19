@@ -1,4 +1,4 @@
-# react-task
+# react-native-task
 
 npx create-react-native-app -t https://github.com/nikita-tatarskikh/react-task 
 
