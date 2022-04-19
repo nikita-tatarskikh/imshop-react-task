@@ -3,7 +3,6 @@ import {
   StyleSheet,
   Text,
   View,
-  ScrollView,
   Image,
   Dimensions
 } from 'react-native';
@@ -75,7 +74,7 @@ const DetailScreen = ({ navigation, route }) => {
               {item.title}
             </Text>
           </SharedElement>
-          <SharedElement id={`item.${item.id}.description`}>
+          <SharedElement id={`item.${item.id}.name`}>
             <Text
               style={{
                 color: 'white',
@@ -84,52 +83,23 @@ const DetailScreen = ({ navigation, route }) => {
                 lineHeight: 18
               }}
             >
-              {item.description}
+              {item.name}
+            </Text>
+          </SharedElement>
+          <SharedElement id={`item.${item.id}.price`}>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 16,
+                fontWeight: 'bold',
+                lineHeight: 18
+              }}
+            >
+              ${item.price}
             </Text>
           </SharedElement>
         </View>
       </View>
-      <ScrollView
-        indicatorStyle='white'
-        style={{
-          paddingHorizontal: 20,
-          backgroundColor: '#0f0f0f'
-        }}
-        contentContainerStyle={{ paddingVertical: 20 }}
-      >
-        <Text
-          style={{
-            fontSize: 18,
-            color: '#fff',
-            lineHeight: 24,
-            marginBottom: 4
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
-        <Text
-          style={{
-            fontSize: 18,
-            color: '#fff',
-            lineHeight: 24,
-            marginBottom: 4
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
-      </ScrollView>
     </View>
   );
 };
